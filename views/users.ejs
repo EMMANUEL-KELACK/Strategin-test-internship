@@ -1,0 +1,17 @@
+<!DOCTYPE html> 
+<html lang="fr"> 
+
+<head> 
+    <meta charset="UTF-8">
+    <title>Liste des utilisateurs</title> 
+</head> 
+
+<body> 
+    <h1>Utilisateurs</h1> 
+    <ul> <!-- Début d'une liste non ordonnée pour présenter les données des utilisateurs de manière structurée. -->
+        <% users.forEach(function(user) { %> <!-- Bloc de code EJS qui commence une boucle pour itérer sur chaque utilisateur dans la variable 'users'. -->
+            <li><%= user.email %></li>  <!-- Pour chaque utilisateur, affiche l'email dans un élément de liste <li>. La syntaxe <%= %> insère le contenu de la variable 'user.email'. -->
+        <% }); %> <!-- Fin de la boucle forEach dans EJS. -->
+    </ul> 
+</body> 
+</html> 

@@ -1,0 +1,17 @@
+<!DOCTYPE html> 
+<html lang="fr"> 
+
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Connexion</title> 
+</head> 
+
+<body> 
+    <h1>Connexion</h1> 
+    <form action="/login" method="POST"> <!-- Début d'un formulaire qui envoie des données au serveur. L'attribut 'action' spécifie l'URL où les données du formulaire doivent être envoyées, ici à '/login'. La méthode 'POST' est utilisée pour envoyer les données de manière sécurisée. -->
+        <input type="email" name="email" placeholder="Email" required> <!-- Un champ de saisie pour l'adresse email de l'utilisateur. Le type 'email' valide automatiquement le format de l'email, et 'required' rend ce champ obligatoire pour soumettre le formulaire. -->
+        <input type="password" name="password" placeholder="Mot de passe" required> <!-- Un champ de saisie pour le mot de passe, cachant les caractères saisis pour la confidentialité. Comme le champ email, il est également requis. -->
+        <button type="submit">Se connecter</button> <!-- Un bouton pour soumettre le formulaire, déclenchant l'envoi des données au serveur pour la connexion. -->
+    </form> 
+</body> 
+</html> 

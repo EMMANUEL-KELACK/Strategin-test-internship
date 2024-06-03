@@ -1,0 +1,20 @@
+<!DOCTYPE html> 
+<html lang="fr"> 
+
+<head> <!-- Contient les métadonnées (informations sur les données) de la page web. -->
+    <meta charset="UTF-8"> <!-- Spécifie le jeu de caractères utilisé pour encoder le texte du document, UTF-8 couvre pratiquement tous les caractères et symboles du monde. -->
+    <title>Inscription</title> 
+</head> 
+
+<body> 
+    <h1>Inscription</h1> 
+    <form action="/register" method="POST"> <!-- Début d'un formulaire qui enverra les données à l'URL '/register' via la méthode POST. -->
+        <input type="email" name="email" placeholder="Entrez votre email" required> <!-- Champ de formulaire pour l'email, obligatoire pour la soumission. -->
+        <input type="password" name="password" placeholder="Entrez votre mot de passe" required> <!-- Champ de mot de passe, également obligatoire. -->
+        <button type="submit">S'inscrire</button> <!-- Bouton pour soumettre le formulaire. -->
+    </form> 
+    <p> <!-- Paragraphe contenant du texte et un lien. -->
+        J'ai déjà un compte? <a href="/login">Connectez-vous ici</a>. <!-- Lien permettant aux utilisateurs ayant déjà un compte de se connecter. -->
+    </p>
+</body> 
+</html> 
